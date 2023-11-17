@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Card.css">
+    <title>Card Layout</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+      
+          
+        }
+		
+        .container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			padding: 20px;
+           
+		}
+
+		.card {
+            width: 250px;
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: box-shadow 0.3s ease-in-out;
+            
+			
+		}
+
+		.card:hover {
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            background-color: whitesmoke;
+		}
+
+		.card img {
+			width: 100%;
+			max-height: 150px;
+			object-fit: cover;
+			
+		}
+
+		.card h2 {
+			margin-bottom: 5px;
+			text-align: center;
+		}
+
+		.card p {
+			
+			text-align: center;
+		}
+
+        
+        
+	</style>
+</head>
+<body>
+	<div class="container">
+        <div class="card">
+            <img src="Romnaticf.jpg" alt="Romantic film">
+            <h2>Romantic movies</h2>
+            <p></p>
+        </div>
+        <div class="card">
+            <img src="Dedectivef.jpg" alt="Dedective film">
+            <h2>Detective movies</h2>
+            <p></p>
+        </div>
+        <div class="card">
+            <img src="Fantasticf.jpg" alt="Fantastic film">
+            <h2>Fantastic movies</h2>
+           
+        </div>
+        <div class="card">
+            <img src="Comedif.webp" alt="Comedy film">
+            <h2>Comedy movies</h2>
+          
+        </div>
+    </div>
+</body>
+</html> 
